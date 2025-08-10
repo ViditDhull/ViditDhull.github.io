@@ -17,7 +17,7 @@ body{
   color:var(--text);
   /* Background with image fallback to gradients */
   background:
-    linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+    linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
     url('../images/bg.jpg') center/cover no-repeat fixed,
     radial-gradient(900px 600px at 80% -10%, rgba(124,77,255,0.06), transparent 60%),
     radial-gradient(700px 500px at 10% 0%, rgba(79,195,247,0.06), transparent 50%),
