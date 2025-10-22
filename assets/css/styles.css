@@ -24,7 +24,7 @@ body {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(0, 212, 255, 0.2);
     z-index: 2000;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
 }
 
 .nav-content {
@@ -33,7 +33,7 @@ body {
     align-items: center;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 12px 40px;
+    padding: 8px 28px;
 }
 
 .nav-logo {
@@ -71,21 +71,21 @@ body {
     align-items: center;
 }
 
-/* Add after navbar styles, around line 70 */
 .hero-section {
-    max-width: 1000px;
-    margin: 90px auto 0 auto;
+    max-width: 1200px;
+    margin: clamp(70px, 9vh, 110px) auto 0;
+    padding: 0 2rem;
     text-align: center;
 }
 
 .hero-title {
-    font-size: 18px;
+    font-size: 14px;
     color: #00d4ff;
     margin-bottom: 0px;
 }
 
 .hero-description {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.6;
     color: #b0b0b0;
 }
@@ -109,13 +109,19 @@ body {
     height: 22px;
 }
 
-/* Pipeline Container - Positioned higher and with more bottom margin */
+/* Pipeline Container */
 .pipeline-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    margin-top: 45px;
+    margin-top: clamp(30px, 5vh, 55px);
+    padding: 0 1.25rem;
     overflow-x: auto;
+    gap: 0;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pipeline-flow {
@@ -123,15 +129,16 @@ body {
     align-items: center;
     gap: 0;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Layer Sections with Enhanced Aura */
 .layer-section {
     display: flex;
     align-items: center;
     gap: 0;
     position: relative;
-    padding: 60px 20px 25px 20px;
+    padding: 45px 8px 10px 10px;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
@@ -177,7 +184,7 @@ body {
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
 }
 
-/* Connector Lines (Visible Pipeline) - ALL ALIGNED AT SAME HEIGHT */
+/* Connector Lines */
 .connector-line {
     width: 50px;
     height: 4px;
@@ -202,14 +209,12 @@ body {
     box-shadow: 0 0 12px rgba(255, 215, 0, 0.5);
 }
 
-/* Transition lines between layers - NOW ALIGNED WITH OTHER PIPES */
 .transition-line {
     background: linear-gradient(90deg, rgba(200, 150, 90, 0.7), rgba(220, 180, 100, 0.7));
     box-shadow: 0 0 12px rgba(210, 165, 95, 0.5);
     margin-top: 35px;
 }
 
-/* Animated flow through connector lines - Only white particle */
 .connector-line::after {
     content: '';
     position: absolute;
@@ -240,14 +245,13 @@ body {
     }
 }
 
-/* Cards - Reduced width */
 .card {
     position: relative;
     background: linear-gradient(135deg, rgba(30, 30, 30, 0.95), rgba(20, 20, 20, 0.95));
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    padding: 18px 12px;
-    width: 115px;
+    padding: 10px 8px;
+    width: 80px;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -294,37 +298,36 @@ body {
 }
 
 .card-title {
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: #e0e0e0;
 }
 
-/* Detail Panel - Reduced height to not cover pipeline */
+/* Detail Panel */
 .detail-panel {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(180deg, rgba(18, 18, 18, 0.98), rgba(12, 12, 12, 0.98));
+    left: 0; right: 0; bottom: 0;
+    background: linear-gradient(180deg, rgba(18,18,18,0.98), rgba(12,12,12,0.98));
     backdrop-filter: blur(10px);
-    max-height: 300px;
-    overflow: hidden;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
+    max-height: 0;
     opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
     z-index: 1500;
-    box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 -5px 30px rgba(0,0,0,0.9);
 }
-
 .detail-panel.active {
-    max-height: 300px;
+    max-height: var(--detail-panel-active-height);
     opacity: 1;
+    pointer-events: auto;
     overflow-y: auto;
 }
 
 .detail-content {
-    padding: 30px 50px 20px 50px;
+    padding: 10px 50px 20px 50px;
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -595,7 +598,7 @@ body {
 .footer {
     background: linear-gradient(135deg, rgba(15, 15, 15, 0.95), rgba(20, 20, 20, 0.95));
     border-top: 1px solid rgba(0, 212, 255, 0.2);
-    padding: 25px 40px;
+    padding: 10px 25px;
     margin-top: auto;
     margin-bottom: 0px;
 }
@@ -604,10 +607,11 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
 }
 
 .footer-text {
@@ -616,24 +620,8 @@ body {
     gap: 12px;
     font-size: 13px;
     color: #888;
-}
-
-.footer-copyright {
-    color: #00d4ff;
-    font-weight: 600;
-}
-
-.footer-separator {
-    color: #555;
-}
-
-.footer-tagline {
-    font-style: italic;
-}
-
-.footer-tech {
-    display: flex;
-    gap: 10px;
+    justify-content: center;
+    text-align: center;
 }
 
 .tech-badge {
@@ -647,132 +635,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .pipeline-container {
-        overflow-x: scroll;
-        justify-content: flex-start;
-        margin-top: 80px;
-        margin-bottom: 100px;
-    }
-    
-    .nav-content {
-        padding: 12px 20px;
-    }
-    
-    .detail-content {
-        padding: 25px 30px 20px 30px;
-    }
-    
-    .detail-panel.active {
-        max-height: 300px;
-    }
-    
-    .footer {
-        padding: 20px 20px;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-content {
-        flex-direction: row;
-        padding: 10px 15px;
-    }
-    
-    .logo-name {
-        font-size: 18px;
-    }
-    
-    .logo-designation {
-        font-size: 10px;
-    }
-    
-    .nav-social {
-        gap: 12px;
-    }
-    
-    .social-icon svg {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .pipeline-container {
-        margin-top: 70px;
-        margin-bottom: 5%;
-    }
-    
-    .card {
-        width: 85px;
-        padding: 15px 10px;
-    }
-    
-    .card-icon {
-        font-size: 24px;
-    }
-    
-    .card-title {
-        font-size: 8px;
-    }
-    
-    .connector-line {
-        width: 35px;
-    }
-    
-    .transition-line {
-        margin-top: 30px;
-    }
-    
-    .detail-content {
-        padding: 20px 15px;
-    }
-    
-    .detail-panel.active {
-        max-height: 300px;
-    }
-    
-    .detail-section h2 {
-        font-size: 18px;
-    }
-    
-    .detail-section h3 {
-        font-size: 14px;
-    }
-    
-    .skill-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .summary-stats {
-        flex-direction: column;
-    }
-    
-    .footer {
-        padding: 20px 15px;
-    }
-    
-    .footer-text {
-        flex-direction: column;
-        gap: 8px;
-    }
-    
-    .footer-separator {
-        display: none;
-    }
-    
-    .footer-tech {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
 
 /* Scrollbar Styling */
 .detail-panel::-webkit-scrollbar,
@@ -795,4 +657,24 @@ body {
 .detail-panel::-webkit-scrollbar-thumb:hover,
 .pipeline-container::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 212, 255, 0.6);
+}
+
+:root {
+    --detail-panel-gap: 20px;
+    --detail-panel-active-height: clamp(220px, 38vh, 320px);
+}
+
+.content-wrapper {
+    padding-bottom: 80px;
+    transition: padding-bottom 0.3s ease;
+}
+body.panel-open .content-wrapper {
+    padding-bottom: calc(var(--detail-panel-active-height) + var(--detail-panel-gap));
+}
+
+.pipeline-container {
+    margin-bottom: 10px;
+}
+body.panel-open .pipeline-container {
+    margin-bottom: var(--detail-panel-gap);
 }
