@@ -1,163 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vidit Dhull — Data Engineer</title>
-  <meta name="description" content="Azure/Microsoft Fabric & Snowflake-focused Data Engineer—scalable pipelines, ML-ready datasets, and actionable BI." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidit Dhull | Data Engineer Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="top-nav container">
-      <a href="#summary">Summary</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#certs">Certifications</a>
-      <a href="#education">Education</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#contact">Contact</a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <div class="logo-content">
+                    <div class="logo-name">Vidit Dhull</div>
+                    <div class="logo-designation">Data Engineer</div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <!-- Empty middle section as requested -->
+            </div>
+            <div class="nav-social">
+                <a href="https://github.com/ViditDhull" class="social-icon" title="GitHub" target="_blank">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/viditdhull/" class="social-icon" title="LinkedIn" target="_blank">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                </a>
+                <a href="https://leetcode.com/u/Vidit_Dhull/" class="social-icon" title="LeetCode" target="_blank">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+                    </svg>
+                </a>
+                <a href="mailto:vidit.dh@gmail.com" class="social-icon" title="Email">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1>Vidit Dhull</h1>
-      <p class="role">Data Engineer</p>
-      <p class="tagline">Microsoft Fabric • Azure • Python • Power BI</p>
-      <div class="cta-row">
-        <a class="btn primary" href="#contact">Get in touch</a>
-        <a class="btn subtle" href="assets/resume/CV_Vidit_Dhull.pdf" target="_blank" rel="noopener">Download PDF</a>
-      </div>
-    </div>
-  </section>
-
-  <main>
-    <section id="summary" class="section">
-      <div class="container">
-        <h2>Summary</h2>
-        <ul>
-              <li>Microsoft Certified Azure Data Engineer with 2+ years of experienc.</li>
-              <li>Optimizing data models and stored procedures (up to 40% faster queries), delivering ML-ready datasets, and enabling insights with Power BI (reduced troubleshooting time from 2 months to &lt2 weeks).</li>
-              <li>Strong Python and SQL developer (HackerRank 5-star; 600+ LeetCode problems) with hands-on CI/CD, code reviews, and agile collaboration.</li>
-              <li>Ranked 1st in PG-Diploma (Big Data Analytics) at CDAC Bengaluru.</li>
-            </ul>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="card"><h3>Programming</h3><p>Python, SQL</p></div>
-          <div class="card"><h3>Cloud & Platforms</h3><p>Azure, Microsoft Fabric</p></div>
-          <div class="card"><h3>Data Engineering</h3><p>Apache Spark, Eventhouse, ETL/ELT, Batch & Streaming</p></div>
-          <div class="card"><h3>Modeling & Warehousing</h3><p>Medallion, Star/Snowflake, Stored Procedures, CTE</p></div>
-          <div class="card"><h3>Analytics & BI</h3><p>Power BI</p></div>
-          <div class="card"><h3>DevOps & Collaboration</h3><p>GitLab, CI/CD, Agile/Scrum</p></div>
+    <!-- hero-section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">About This Design</h1>
+            <p class="hero-description">
+                This design mirrors the Medallion Architecture - a data lakehouse pattern where information matures
+                through stages.<br>
+                Just as Bronze captures raw data, Silver cleanses it, and Gold delivers insights, my journey progresses
+                from foundational
+                knowledge to business-ready expertise.
+            </p>
         </div>
-      </div>
     </section>
 
-    <section id="experience" class="section">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="job">
-          <div class="job-head">
-            <h3>Data Engineer, Alstom — Bengaluru</h3>
-            <h3>Mar 2023 - Present</h3>
-          </div>
+    <div class="pipeline-container">
+        <!-- Pipeline with all cards in sequence -->
+        <div class="pipeline-flow">
+            <!-- Bronze Layer Cards -->
+            <div class="layer-section bronze-layer" id="bronze">
+                <div class="layer-label bronze-label">BRONZE LAYER</div>
 
-          <div class="project">
-            <h4>Dialogs — AI-Powered Troubleshooting Platform</h4>
-            <span class="dates">Apr 2024 - Present</span>
-            <ul>
-              <li>Built and optimized Snowflake data models and stored procedures (~40% faster queries).</li>
-              <li>Developed batch/streaming pipelines with Python notebooks, Eventhouse, sub-pipelines (100K+ daily events).</li>
-              <li>Delivered Power BI dashboards cutting troubleshooting from 2 months to &lt;2 weeks.</li>
-              <li>Reviewed code and collaborated on pipeline architecture for performance and maintainability.</li>
-              <li>Standardized logs to parquet/tabular to improve ML-readiness and accessibility.</li>
-            </ul>
-          </div>
+                <div class="card bronze-card" data-section="education">
+                    <div class="card-icon">📚</div>
+                    <div class="card-title">Education</div>
+                </div>
 
-          <div class="project">
-            <h4>NSCR</h4>
-            <span class="dates">Oct 2023 - Mar 2024</span>
-            <ul>
-              <li>Delivered validated datasets for 100+ configurations, meeting all project milestones independently.</li>
-              <li>Achieved 100% automation of validation workflows using Python-based logic, reducing manual effort by 70%.</li>
-              <li>Reviewed and optimized 50+ validation scripts, improving maintainability and reducing error rates.</li>
-            </ul>
-          </div>
+                <div class="connector-line bronze-line"></div>
 
-          <div class="project">
-            <h4>Ireland</h4>
-            <span class="dates">Mar 2023 - Sep 2023</span>
-            <ul>
-              <li>Automated validation of 1,500+ signaling configurations using internally scripted logic.</li>
-              <li>Defined and implemented 200+ validation rules based on complex signaling scenarios.</li>
-              <li>Collaborated with design teams to troubleshoot mismatches, reducing manual effort by 60%.</li>
-            </ul>
-          </div>
+                <div class="card bronze-card" data-section="certifications">
+                    <div class="card-icon">🎓</div>
+                    <div class="card-title">Certifications</div>
+                </div>
+            </div>
+
+            <!-- Transition connector between Bronze and Silver -->
+            <div class="connector-line transition-line"></div>
+
+            <!-- Silver Layer Cards -->
+            <div class="layer-section silver-layer" id="silver">
+                <div class="layer-label silver-label">SILVER LAYER</div>
+
+                <div class="card silver-card" data-section="skills">
+                    <div class="card-icon">⚙️</div>
+                    <div class="card-title">Skills</div>
+                </div>
+
+                <div class="connector-line silver-line"></div>
+
+                <div class="card silver-card" data-section="experience">
+                    <div class="card-icon">💼</div>
+                    <div class="card-title">Experience</div>
+                </div>
+
+                <div class="connector-line silver-line"></div>
+
+                <div class="card silver-card" data-section="projects">
+                    <div class="card-icon">🚀</div>
+                    <div class="card-title">Projects</div>
+                </div>
+            </div>
+
+            <!-- Transition connector between Silver and Gold -->
+            <div class="connector-line transition-line"></div>
+
+            <!-- Gold Layer Cards -->
+            <div class="layer-section gold-layer" id="gold">
+                <div class="layer-label gold-label">GOLD LAYER</div>
+
+                <div class="card gold-card" data-section="summary">
+                    <div class="card-icon">✨</div>
+                    <div class="card-title">Summary</div>
+                </div>
+
+                <div class="connector-line gold-line"></div>
+
+                <div class="card gold-card" data-section="contact">
+                    <div class="card-icon">📧</div>
+                    <div class="card-title">Contact</div>
+                </div>
+
+                <div class="connector-line gold-line"></div>
+
+                <div class="card gold-card" data-section="resume">
+                    <div class="card-icon">📄</div>
+                    <div class="card-title">Resume</div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-
-    <section id="certs" class="section">
-      <div class="container">
-        <h2>Certifications</h2>
-        <ul class="list">
-          <li>Azure Data Engineer Associate (DP-203) — Jun 2024</li>
-          <li>Azure Data Fundamentals (DP-900) — Apr 2024</li>
-          <li>IBM Data Engineering Specialization — Oct 2023</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <div class="container">
-        <h2>Education</h2>
-        <ul class="list">
-          <li>PG-Diploma (Big Data Analytics), CDAC Bengaluru — 82% | Ranked 1st</li>
-          <li>B.Tech (CSE), UIET-MDU, Haryana — 7.8 CGPA</li>
-          <li>12th Standard (Non-Medical), CBSE — 81%</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="achievements" class="section">
-      <div class="container">
-        <h2>Achievements</h2>
-        <ul class="list">
-          <li>Ranked 1st in PG-Diploma (Big Data Analytics) at CDAC Bengaluru</li>
-          <li>HackerRank 5-star (Python, SQL); 600+ LeetCode problems</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <ul class="contact">
-          <li><a href="mailto:vidit.dh@gmail.com">vidit.dh@gmail.com</a></li>
-          <li><a href="tel:+919355512200">+91 9355512200</a></li> 
-          <li><a href="https://www.linkedin.com/in/vidit-dhull-045665236/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://github.com/ViditDhull" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://leetcode.com/u/Vidit_Dhull/" target="_blank" rel="noopener">LeetCode</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p> </p>
     </div>
-  </footer>
 
-  <script src="assets/js/main.js"></script>
+    <!-- Detail Panel -->
+    <div class="detail-panel" id="detailPanel">
+        <div class="detail-content">
+            <!-- Education -->
+            <div class="detail-section" data-detail="education">
+                <h2>Education</h2>
+                <div class="detail-item">
+                    <h3>PG-Diploma (Big Data Analytics)</h3>
+                    <p class="detail-meta">CDAC-Bangalore | September, 2022 - March, 2023</p>
+                </div>
+                <div class="detail-item">
+                    <h3>B. TECH (CSE)</h3>
+                    <p class="detail-meta">UIET-MDU, Haryana | July, 2018 - August, 2022</p>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="detail-section" data-detail="certifications">
+                <h2>Certifications</h2>
+                <div class="detail-item">
+                    <h3>Fabric Data Engineer Associate (DP-700)</h3>
+                    <p class="detail-meta">Microsoft | 2025</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Azure Data Engineer Associate (DP-203)</h3>
+                    <p class="detail-meta">Microsoft | 2024</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Azure Data Fundamentals (DP-900)</h3>
+                    <p class="detail-meta">Microsoft | 2024</p>
+                </div>
+                <div class="detail-item">
+                    <h3>IBM Data Engineering Specialization</h3>
+                    <p class="detail-meta">IBM | 2023</p>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="detail-section" data-detail="skills">
+                <h2>Technical Skills</h2>
+                <div class="skill-grid">
+                    <div class="skill-category">
+                        <h4>Programming & Scripting</h4>
+                        <p>Python, SQL, PySpark</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Data Engineering Tools</h4>
+                        <p>Apache Spark, Hadoop, Kafka, Airflow, Microsoft Fabric, Eventhouse, Power BI, Azure Data
+                            Factory</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Data Modeling & Warehousing</h4>
+                        <p>Medallion Architecture, Star & Snowflake Schema, Stored Procedures, CTE</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Data Processing</h4>
+                        <p>Batch & Streaming Pipelines, Data Processing Automation, Log Ingestion, ETL/ELT</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Collaboration & Version Control</h4>
+                        <p>GitLab, CI/CD, Agile/Scrum, Code Reviews, Documentation, Team Collaboration, Communication
+                        </p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Others</h4>
+                        <p>Requirement Analysis, FinOps Awareness, Parquet/Tabular Data Formats, Problem Solving</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="detail-section" data-detail="experience">
+                <h2>Work Experience</h2>
+                <div class="detail-item">
+                    <h3>Data Engineer</h3>
+                    <p class="detail-meta">Alstom | Spetember, 2024 - Present | India</p>
+                    <p class="detail-meta">Project: Dialogs (Diagnostics of Logs) - AI-Powered Troubleshooting Platform
+                    </p>
+                    <ul>
+                        <li>An enterprise-grade platform built on Microsoft Fabric to ingest, process, and visualize
+                            large-scale log data from rail systems like CCP2 and MooN. Built and optimized
+                            Snowflake-based data models and stored procedures, reducing query execution time by 40%</li>
+                        <li>Developed scalable batch and streaming pipelines using Python notebooks, Eventhouse, and
+                            sub-pipelines, processing 100K+ daily events.</li>
+                        <li>Delivered Power BI dashboards that reduced troubleshooting time from 2 months to under 2
+                            weeks.</li>
+                        <li>Conducted code reviews and collaborated on pipeline architecture to ensure performance and
+                            maintainability.</li>
+                        <li>Enabled seamless log transformation into parquet/tabular formats, improving ML-readiness and
+                            data accessibility.</li>
+                    </ul>
+                    <br>
+                    <h3>Associate Data Engineer</h3>
+                    <p class="detail-meta">Alstom | September, 2023 - August, 2024 | India</p>
+                    <ul>
+                        <li>Delivered datasets for 100+ configurations, meeting all project milestones independently.
+                        </li>
+                        <li>Achieved 100% automation of workflows using Python-based logic, reducing manual effort by
+                            70%.</li>
+                        <li>Reviewed and optimized 50+ scripts, improving maintainability and reducing error rates.</li>
+                    </ul>
+                    <br>
+                    <h3>Software Engineer Trainee</h3>
+                    <p class="detail-meta">Alstom | March, 2023 - August, 2023 | India</p>
+                    <ul>
+                        <li>Automated workflow of 1,500+ signaling configurations using internally scripted logic.</li>
+                        <li>Collaborated with design teams to troubleshoot mismatches, reducing manual effort by 60%.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="detail-section" data-detail="projects">
+                <h2>Key Projects</h2>
+                <div class="detail-item">
+                    <h3>Dialogs (Diagnostics of Logs)</h3>
+                    <p>Dialogs is a cloud-native, AI-driven troubleshooting platform developed to centralize and
+                        accelerate log data analysis across Alstom's rail solutions, including CCP2, and MooN. Built on
+                        Microsoft Fabric and Azure, the platform ingests both batch and streaming data, applies
+                        medallion architecture for data refinement, and delivers curated datasets and dashboards to
+                        internal data science and solutioning teams.</p>
+                    <br>
+                    <p class="detail-meta">Tech Stack: Python, SQL, Microsoft Fabric, Snowflake, Power BI, Eventhouse,
+                        GitLab, Medallion Architecture, Azure, CI/CD, Streaming & Batch Processing</p>
+                    <p class="detail-meta">Impact: Designed and optimized Snowflake-based data models and stored
+                        procedures, reducing query execution time by 40% using CTEs and schema tuning.
+                        Developed scalable pipelines using Python notebooks, Eventhouse, and sub-pipelines, processing
+                        100K+ daily events and 50+ OMAP files.
+                        Built Power BI dashboards that reduced troubleshooting time from 2 months to under 2 weeks,
+                        enabling faster decision-making and root cause analysis.
+                        Enabled integration of raw logs from CCP2 and MooN platforms, transforming them into parquet and
+                        tabular formats for ML-readiness and business intelligence.
+                        Conducted code reviews and collaborated on pipeline architecture to ensure performance,
+                        maintainability, and adherence to best practices.
+                        Supported deployment of KPI visualization modules and ML algorithm configurations for predictive
+                        maintenance and anomaly detection.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>LusciusTensors (AI Products Website)</h3>
+                    <p>Developed an AI platform to interact with pre-trained ML models, integrating ChatGPT API and
+                        TensorFlow for various NLP tasks. Designed intuitive front-end for enhanced user experience with
+                        real-time model interaction.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Credit Card Fraud Detection</h3>
+                    <p>Led a team to build a fraud detection model with ML and DL algorithms, achieving a classification
+                        accuracy of 95% for real-time fraud detection. Deployed real-time classification pipeline using
+                        Kafka Stream on AWS EC2, resulting in lower latency.</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Web Scraper (Tradesy) </h3>
+                    <p>Developed web-scraping script using BeautifulSoup in Python.</p>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="detail-section" data-detail="summary">
+                <h2>Professional Summary</h2>
+                <p>Ranked 1st in PG-Diploma (Big Data Analytics) at CDAC Bengaluru.</p>
+                <p>Strong Python and SQL developer (HackerRank 5-star; 600+ LeetCode problems) with hands-on CI/CD, code
+                    reviews, and agile collaboration.</p>
+                <p>Proven track record optimizing data models and stored procedures (up to 40% faster queries),
+                    delivering ML-ready datasets, and enabling insights with Power BI (reduced troubleshooting time from
+                    2 months to less than 2 weeks).</p>
+                <p>Microsoft Certified Azure Data Engineer with 3+ years of experience designing, building, and
+                    automating scalable batch and streaming data pipelines on Azure/Microsoft Fabric.</p>
+                <div class="summary-stats">
+                    <div class="stat">
+                        <div class="stat-number">1st Rank</div>
+                        <div class="stat-label">PG-Diploma (Big Data Analytics)</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10TB+</div>
+                        <div class="stat-label">Daily Data Processed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Pipelines Built</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">System Uptime</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">Cost Reduction</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="detail-section" data-detail="contact">
+                <h2>Get In Touch</h2>
+                <p>I'm always open to discussing new opportunities, collaborations, or just connecting with fellow data
+                    enthusiasts. Feel free to reach out through any of the channels below.</p>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <span class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </span>
+                        <div class="contact-info">
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">vidit.dh@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </span>
+                        <div class="contact-info">
+                            <div class="contact-label">LinkedIn</div>
+                            <div class="contact-value">linkedin.com/in/viditdhull/</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </span>
+                        <div class="contact-info">
+                            <div class="contact-label">GitHub</div>
+                            <div class="contact-value">github.com/ViditDhull</div>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+                            </svg>
+                        </span>
+                        <div class="contact-info">
+                            <div class="contact-label">LeetCode</div>
+                            <div class="contact-value">leetcode.com/u/Vidit_Dhull/</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resume Download -->
+            <div class="detail-section" data-detail="resume">
+                <h2>Download Resume</h2>
+                <p>Get a comprehensive overview of my experience, skills, projects, and achievements in a professionally
+                    formatted document.</p>
+                <a href="assets/resume/CV_Vidit_Dhull.pdf" class="download-btn" download>
+                    <span class="download-icon">⬇️</span>
+                    Download PDF Resume
+                </a><br>
+                <a href="assets/resume/CV_Vidit_Dhull.docx" class="download-btn" download>
+                    <span class="download-icon">⬇️</span>
+                    Download Word Resume
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <span class="footer-copyright">© 2025 Vidit Dhull</span>
+                <span class="footer-separator">•</span>
+                <span class="footer-tagline">Built with passion for data engineering</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
