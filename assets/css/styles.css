@@ -298,11 +298,13 @@ body {
 }
 
 .card-title {
-    font-size: 8px;
+    font-size: clamp(7px, 2vw, 9px);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: #e0e0e0;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 /* Detail Panel */
