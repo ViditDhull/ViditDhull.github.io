@@ -20,11 +20,8 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(135deg, rgba(15, 15, 15, 0.98), rgba(20, 20, 20, 0.98));
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+    background: #0a0a0a;
     z-index: 2000;
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
 }
 
 .nav-content {
@@ -48,7 +45,7 @@ body {
 }
 
 .logo-name {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     background: linear-gradient(90deg, #00d4ff, #0099cc);
     -webkit-background-clip: text;
@@ -58,7 +55,7 @@ body {
 }
 
 .logo-designation {
-    font-size: 12px;
+    font-size: 9px;
     color: #888;
     font-weight: 500;
     text-transform: uppercase;
@@ -298,7 +295,7 @@ body {
 }
 
 .card-title {
-    font-size: 7px;
+    font-size: 8px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
