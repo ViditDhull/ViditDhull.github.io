@@ -29,8 +29,8 @@ body {
 
 /* hero */
 .hero-section { max-width: 1200px; margin: clamp(70px, 9vh, 110px) auto 0; padding: 0 2rem; text-align: center; }
-.hero-title { font-size: clamp(14px, 1.8vw, 22px);; color: #00d4ff; margin-bottom: 0px; }
-.hero-description { font-size: clamp(12px, 1.3vw, 16px); line-height: 1.4; color: #b0b0b0; }
+.hero-title { font-size: clamp(16px, 1.8vw, 22px);; color: #00d4ff; margin-bottom: 0px; }
+.hero-description { font-size: clamp(14px, 1.3vw, 16px); line-height: 1.4; color: #b0b0b0; }
 
 /* ---------- PIPELINE ---------- */
 /* container that scrolls horizontally on small screens */
