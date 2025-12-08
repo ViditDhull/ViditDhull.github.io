@@ -29,8 +29,8 @@ body {
 
 /* hero */
 .hero-section { max-width: 1200px; margin: clamp(70px, 9vh, 110px) auto 0; padding: 0 2rem; text-align: center; }
-.hero-title { font-size: 26px; color: #00d4ff; margin-bottom: 0px; }
-.hero-description { font-size: 16px; line-height: 1.6; color: #b0b0b0; }
+.hero-title { font-size: 18px; color: #00d4ff; margin-bottom: 0px; }
+.hero-description { font-size: 14px; line-height: 1.4; color: #b0b0b0; }
 
 /* ---------- PIPELINE ---------- */
 /* container that scrolls horizontally on small screens */
@@ -67,7 +67,7 @@ body {
     align-items: center;
     gap: 0;
     position: relative;
-    padding: 28px 10px 10px 10px;
+    padding: 36px 10px 10px 10px;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
@@ -79,7 +79,7 @@ body {
 
 .layer-label {
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 14px;
     font-size: 10px;
     font-weight: 700;
@@ -144,8 +144,7 @@ body {
 /* icon and title - responsive font and ellipsis */
 .card-icon { font-size: 20px; margin-bottom: 8px; display:block; line-height:1; }
 .card-title {
-    /* responsive font size that respects card width and avoids overflow */
-    font-size: clamp(8px, 1.4vw, 12px);
+    font-size: clamp(8px, 1.4vw, 11px);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.6px;
