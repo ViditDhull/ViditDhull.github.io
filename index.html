@@ -185,23 +185,27 @@
                     </div>
                     <div class="skill-category">
                         <h4>Tech Stack</h4>
-                        <p>Microsoft Fabric, Eventhouse, ADLS Gen2, Spark on Kubernetes (K8s), Apache Airflow</p>
+                        <p>Apache Spark, Apache Airflow, Kafka, Batch and Real-time processing, Power BI</p>
                     </div>
                     <div class="skill-category">
                         <h4>Architecture</h4>
-                        <p>Medallion Architecture, Lakehouse Design, Star Schema, ELT/ETL, Time-series Processing</p>
+                        <p>Medallion/Lakehouse Architecture, Star Schema, ELT/ETL, Indexing/Partition strategy, Dimensional Modeling</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Cloud & Data Platforms</h4>
+                        <p>Microsoft Fabric (Lakehouse, Eventhouse/KQL), ADLS Gen2, Azure Data Factory (ADF), Azure Synapse, Azure Functions, Databricks, OneLake/Delta Lake concepts, Azure Storage/Blob, Events stream</p>
                     </div>
                     <div class="skill-category">
                         <h4>Data Quality & Governance</h4>
-                        <p>Validation Automation, Logging Frameworks, Collibra, KPI Modeling</p>
+                        <p>Validation Automation, Logging Frameworks, KPI Modeling, RBAC, Access Control</p>
                     </div>
                     <div class="skill-category">
                         <h4>Collaboration & Version Control</h4>
-                        <p>GitLab, Agile/Scrum, CI/CD, Code Reviews, Documentation</p>
+                        <p>GitLab, Agile/Scrum, CI/CD, Azure Devops, Code Reviews, Stakeholder Collaboration</p>
                     </div>
                     <div class="skill-category">
                         <h4>Additional Skills</h4>
-                        <p>Requirement Analysis, FinOps Awareness, Parquet/Tabular Data Formats, Delta Lake</p>
+                        <p>Requirement Analysis, FinOps Awareness, Parquet/Tabular Data Formats, Partitioning, Indexing</p>
                     </div>
                 </div>
             </div>
@@ -211,44 +215,25 @@
                 <h2>Work Experience</h2>
                 <div class="detail-item">
                     <h3>Data Engineer</h3>
-                    <p class="detail-meta">Alstom | Spetember, 2023 - Present | India</p>
+                    <p class="detail-meta">Alstom | March 2023 - Present</p>
                     <p class="detail-meta">Project: Dialogs (Diagnostics of Logs) - AI-Powered Troubleshooting Platform
                     </p>
                     <ul>
-                        <li class="detail-meta">An enterprise-grade platform built on Microsoft Fabric to ingest,
-                            process, and visualize
-                            large-scale log data from rail systems like CCP2 and MooN. Built and optimized
-                            Snowflake-based data models and stored procedures, reducing query execution time by 40%</li>
-                        <li class="detail-meta">Developed scalable batch and streaming pipelines using Python notebooks,
-                            Eventhouse, and
-                            sub-pipelines, processing 100K+ daily events.</li>
-                        <li class="detail-meta">Delivered Power BI dashboards that reduced troubleshooting time from 2
-                            months to under 2
-                            weeks.</li>
-                        <li class="detail-meta">Conducted code reviews and collaborated on pipeline architecture to
-                            ensure performance and
-                            maintainability.</li>
-                        <li class="detail-meta">Enabled seamless log transformation into parquet/tabular formats,
-                            improving ML-readiness and
-                            data accessibility.</li>
-                        <li class="detail-meta">Delivered datasets for 100+ configurations, meeting all project
-                            milestones independently.
-                        </li>
-                        <li class="detail-meta">Achieved 100% automation of workflows using Python-based logic, reducing
-                            manual effort by
-                            70%.</li>
-                        <li class="detail-meta">Reviewed and optimized 50+ scripts, improving maintainability and
-                            reducing error rates.</li>
+                        <li class="detail-meta">Worked on development of Dialogs, a company-wide log analytics platform for train telemetry subsystems built from POC to production on a Medallion lakehouse; unified heterogeneous logs and delivered Power BI dashboards for KPI monitoring, log exploration, and pattern analysis. (Processes 5 million events and TB scale data daily)</li>
+                        <li class="detail-meta">Owned end-to-end delivery of an auto-trigger, machine-to-machine ingestion framework in Microsoft Fabric (Blob → Event stream/hub → Lakehouse/Warehouse/Eventhouse), supporting 1..N file drops and separating UI vs automated uploads; improved ingestion responsiveness and reduced ops overhead.</li>
+                        <li class="detail-meta">Led architecture + implementation of signature/pattern search on telemetry using PySpark, enabling fast matching of event sequences to known signatures; reduced investigation/triage time by 50% for recurring issues.</li>
+                        <li class="detail-meta">Designed and delivered partial-run handling (late/partial/complete arrivals) with idempotent merges + governance rules, cutting data inconsistencies and manual rework by 60% and improving KPI reliability.</li>
+                        <li class="detail-meta">Built standardized Medallion (Bronze/Silver/Gold) Delta pipelines + semantic modelsfor multi-tenant onboarding; reduced onboarding/troubleshooting cycle from 2 months to less than 2 weeks.</li>
+                        <li class="detail-meta">Improved performance and cost-efficiency by optimizing Spark workloads (partitioning, broadcast joins, shuffle reduction) and table layout (partitioning/indexing); cut backfill runtime by 50% and improved query latency by 90%.</li>
+                        <li class="detail-meta">Technical owner for CCP2 (train telemetry subsystem)stream, driving architectural decisions, aligning engineering priorities with product requirements, and mentoring contributors on platform standards.</li>
                     </ul>
-                    <br>
-                    <h3>Software Engineer Trainee</h3>
-                    <p class="detail-meta">Alstom | March, 2023 - August, 2023 | India</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Software Engineer</h3>
+                    <p class="detail-meta">Nextsavy Technologies | September 2020 - August 2022</p>
                     <ul>
-                        <li class="detail-meta">Automated workflow of 1,500+ signaling configurations using internally
-                            scripted logic.</li>
-                        <li class="detail-meta">Collaborated with design teams to troubleshoot mismatches, reducing
-                            manual effort by 60%.
-                        </li>
+                        <li class="detail-meta">Scraped and structured 50K+ recordsfrom multiple public websites using BeautifulSoup and Python, improving automated data availability by 45% and reducing manual collection effort by 60%.</li>
+                        <li class="detail-meta">Built and deployed FastAPI REST services to serve ML model predictions, decreasing response time by 50% compared to batch execution and enabling real-time inference for client applications.</li>
                     </ul>
                 </div>
             </div>
@@ -301,8 +286,8 @@
             <div class="detail-section" data-detail="summary">
                 <h2>Professional Summary</h2>
                 <ul>
+                    <li class="detail-meta">Data Engineer with 5+ years of experience building scalable data platforms and real-time streaming pipelines using Spark, Kafka, and both open-source and Azure-based data ecosystems. Experienced in designing Medallion Delta Lakehouse architectures, optimizing large-scale ETL pipelines, and delivering high-throughput event-driven systems processing TB-scale telemetry data for analytics and operational insights.</li>
                     <li class="detail-meta">Ranked 1st among 120+ students in PG-Diploma (Big Data Analytics) at CDAC Bengaluru.</li>
-                    <li class="detail-meta">Data Engineer with 3 years of experience specializing in scalable batch and streaming pipelines using Azure services, Spark, and Medallion architecture for enterprise analytics and ML readiness.</li>
                     <li class="detail-meta">Strong Python and SQL developer (HackerRank 5-star; 700+ LeetCode problems) with hands-on CI/CD, code reviews, and agile collaboration.</li>
                 </ul>
                 <div class="summary-stats">
