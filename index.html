@@ -180,20 +180,20 @@
                 <h2>Technical Skills</h2>
                 <div class="skill-grid">
                     <div class="skill-category">
-                        <h4>Programming Languages</h4>
+                        <h4>Languages</h4>
                         <p>Python, SQL, PySpark</p>
                     </div>
                     <div class="skill-category">
-                        <h4>Tech Stack</h4>
-                        <p>Apache Spark, Apache Airflow, Kafka, Batch and Real-time processing, Power BI</p>
+                        <h4>Data Engineering</h4>
+                        <p>Apache Spark, Apache Airflow, Kafka, Batch and Real-time processing, Delta/Parquet</p>
                     </div>
                     <div class="skill-category">
-                        <h4>Architecture</h4>
-                        <p>Medallion/Lakehouse Architecture, Star Schema, ELT/ETL, Indexing/Partition strategy, Dimensional Modeling</p>
+                        <h4>Cloud/Data Platforms</h4>
+                        <p>Microsoft Fabric, ADLS Gen2, ADF, Azure Synapse, Azure Functions, Databricks, Snowflake, OneLake and Delta Lake concepts, Azure Storage/Blob, Events stream, Power BI, KQL/Eventhouse</p>
                     </div>
                     <div class="skill-category">
-                        <h4>Cloud & Data Platforms</h4>
-                        <p>Microsoft Fabric (Lakehouse, Eventhouse/KQL), ADLS Gen2, Azure Data Factory (ADF), Azure Synapse, Azure Functions, Databricks, OneLake/Delta Lake concepts, Azure Storage/Blob, Events stream</p>
+                        <h4>Data Modeling</h4>
+                        <p>Medallion/Lakehouse Architecture, Star Schema, ELT/ETL, Indexing, Partition, Dimensional Modeling</p>
                     </div>
                     <div class="skill-category">
                         <h4>Data Quality & Governance</h4>
@@ -201,11 +201,11 @@
                     </div>
                     <div class="skill-category">
                         <h4>Collaboration & Version Control</h4>
-                        <p>GitLab, Agile/Scrum, CI/CD, Azure Devops, Code Reviews, Stakeholder Collaboration</p>
+                        <p>GitLab, Agile/Scrum, CI/CD</p>
                     </div>
                     <div class="skill-category">
                         <h4>Additional Skills</h4>
-                        <p>Requirement Analysis, FinOps Awareness, Parquet/Tabular Data Formats, Partitioning, Indexing</p>
+                        <p>Requirement Analysis, FinOps Awareness, Code Reviews, Stakeholder Collaboration</p>
                     </div>
                 </div>
             </div>
@@ -219,21 +219,21 @@
                     <p class="detail-meta">Project: Dialogs (Diagnostics of Logs) - AI-Powered Troubleshooting Platform
                     </p>
                     <ul>
-                        <li class="detail-meta">Worked on development of Dialogs, a company-wide log analytics platform for train telemetry subsystems built from POC to production on a Medallion lakehouse; unified heterogeneous logs and delivered Power BI dashboards for KPI monitoring, log exploration, and pattern analysis. (Processes 5 million events and TB scale data daily)</li>
-                        <li class="detail-meta">Owned end-to-end delivery of an auto-trigger, machine-to-machine ingestion framework in Microsoft Fabric (Blob → Event stream/hub → Lakehouse/Warehouse/Eventhouse), supporting 1..N file drops and separating UI vs automated uploads; improved ingestion responsiveness and reduced ops overhead.</li>
-                        <li class="detail-meta">Led architecture + implementation of signature/pattern search on telemetry using PySpark, enabling fast matching of event sequences to known signatures; reduced investigation/triage time by 50% for recurring issues.</li>
+                        <li class="detail-meta">Took Dialogs, a company-wide log analytics platform for train telemetry subsystems from POC to production on a Medallion lakehouse; unified heterogeneous logs and delivered Power BI dashboards for KPI monitoring, log exploration, and pattern analysis; reduced recurring analysis cycles from 2 months to under 1 week.</li>
+                        <li class="detail-meta">Owned end-to-end delivery of an auto-trigger, machine-to-machine ingestion framework in Microsoft Fabric (Blob → Event stream/hub → Lakehouse/Warehouse/Eventhouse), supporting 30+ GB (5M+ events) daily data ingestion.</li>
+                        <li class="detail-meta">Led architecture + implementation of signature/pattern search on telemetry using PySpark, enabling fast matching of event sequences to known signatures; reduced investigation time by 50% for recurring issues.</li>
                         <li class="detail-meta">Designed and delivered partial-run handling (late/partial/complete arrivals) with idempotent merges + governance rules, cutting data inconsistencies and manual rework by 60% and improving KPI reliability.</li>
-                        <li class="detail-meta">Built standardized Medallion (Bronze/Silver/Gold) Delta pipelines + semantic modelsfor multi-tenant onboarding; reduced onboarding/troubleshooting cycle from 2 months to less than 2 weeks.</li>
-                        <li class="detail-meta">Improved performance and cost-efficiency by optimizing Spark workloads (partitioning, broadcast joins, shuffle reduction) and table layout (partitioning/indexing); cut backfill runtime by 50% and improved query latency by 90%.</li>
-                        <li class="detail-meta">Technical owner for CCP2 (train telemetry subsystem)stream, driving architectural decisions, aligning engineering priorities with product requirements, and mentoring contributors on platform standards.</li>
+                        <li class="detail-meta">Improved performance and cost-efficiency by optimizing Spark workloads (partitioning, broadcast joins, shuffle reduction, handling data skew); cut backfill time by 50% and improved query latency by 90%.</li>
+                        <li class="detail-meta">Implemented agentic automation for Microsoft Fabric pipelines using Azure AI Foundry, MCP-style tool integration, to support data quality checks, test generation, validation, spec-driven development.</li>
+                        <li class="detail-meta">Technical owner for the CCP2 subsystem, leading 3 data engineers, translating client requirements into scalable solutions, assigning implementation tasks, reviewing code, and driving end-to-end delivery of features/data.</li>
                     </ul>
                 </div>
                 <div class="detail-item">
                     <h3>Software Engineer</h3>
                     <p class="detail-meta">Nextsavy Technologies | September 2020 - August 2022</p>
                     <ul>
-                        <li class="detail-meta">Scraped and structured 50K+ recordsfrom multiple public websites using BeautifulSoup and Python, improving automated data availability by 45% and reducing manual collection effort by 60%.</li>
-                        <li class="detail-meta">Built and deployed FastAPI REST services to serve ML model predictions, decreasing response time by 50% compared to batch execution and enabling real-time inference for client applications.</li>
+                        <li class="detail-meta">Built Azure Databricks pipelines for mobility data using ADF, PySpark, Delta Lake, incremental loads, schema enforcement, and bad-record quarantine, reducing reprocessing overhead by 60%.</li>
+                        <li class="detail-meta">Developed Snowflake dimensional marts with fact/dimension modeling, SCD handling, clustering, RBAC, and quality checks, improving BI query performance by 50% for revenue, demand, and utilization reporting.</li>
                     </ul>
                 </div>
             </div>
@@ -286,7 +286,9 @@
             <div class="detail-section" data-detail="summary">
                 <h2>Professional Summary</h2>
                 <ul>
-                    <li class="detail-meta">Data Engineer with 5+ years of experience building scalable data platforms and real-time streaming pipelines using Spark, Kafka, and both open-source and Azure-based data ecosystems. Experienced in designing Medallion Delta Lakehouse architectures, optimizing large-scale ETL pipelines, and delivering high-throughput event-driven systems processing TB-scale telemetry data for analytics and operational insights.</li>
+                    <li class="detail-meta">Data Engineer with 5+ years of experience building scalable data platforms and real-time streaming pipelines using Spark, Kafka, and both open-source and Azure-based data ecosystems.</li>
+                    <li class="detail-meta">Experienced in designing Medallion Delta Lakehouse architectures, optimizing large-scale ETL pipelines, and delivering high-throughput event-driven systems processing TB-scale telemetry data.</li>
+                    <li class="detail-meta">Strong ownership mindset with hands-on leadership in data platform architecture, performance optimization, and reusable engineering standards. Developed AI-assisted SDLC automation using Azure OpenAI, agentic workflows, and developer productivity tooling.</li>
                     <li class="detail-meta">Ranked 1st among 120+ students in PG-Diploma (Big Data Analytics) at CDAC Bengaluru.</li>
                     <li class="detail-meta">Strong Python and SQL developer (HackerRank 5-star; 700+ LeetCode problems) with hands-on CI/CD, code reviews, and agile collaboration.</li>
                 </ul>
@@ -296,16 +298,20 @@
                         <div class="stat-label">PG-Diploma (Big Data Analytics)</div>
                     </div>
                     <div class="stat">
+                        <div class="stat-number">5Y+</div>
+                        <div class="stat-label">Data Engineering Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">30GB+</div>
+                        <div class="stat-label">Daily Logs Ingestion</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5M+</div>
+                        <div class="stat-label">Daily Events Processing</div>
+                    </div>
+                    <div class="stat">
                         <div class="stat-number">10+</div>
                         <div class="stat-label">Pipelines Built</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">99.9%</div>
-                        <div class="stat-label">System Uptime</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">40%</div>
-                        <div class="stat-label">Cost Reduction</div>
                     </div>
                 </div>
             </div>
